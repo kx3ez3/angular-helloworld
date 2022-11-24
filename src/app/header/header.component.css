@@ -1,0 +1,31 @@
+#myheader{
+    width: 100%;
+    z-index: 100;
+}
+#fakeHeader{
+    position: absolute;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    z-index: -1;
+    filter: blur(1px);
+    background-color: rgba(171, 171, 171, 0.148);
+}
+.nav-item{
+    font-weight: 500;
+}
+ul.nav{
+    height: 10vh;
+    align-items: center;
+    background-color: transparent;
+}
+
+li>a{
+    color: rgb(0, 0, 0);
+}
+.nav-link.active{
+    color: rgb(255, 0, 0);
+}
+#logout-btn{
+    cursor: pointer;
+}

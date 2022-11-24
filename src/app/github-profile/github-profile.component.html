@@ -1,0 +1,33 @@
+<br>
+<br>
+<br>
+<input type="text" class='form-control' placeholder="Enter Github Username" [(ngModel)]="userInput">
+<br>
+<br>
+<br>
+<h1 *ngIf="error" class="text-danger text-center">{{error}}</h1>
+<h1>{{userData.name}}</h1>
+
+<div *ngIf="!error">
+    <div class="user-image">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ userData.avatar_url }}" class="card-img-top" alt="no image">
+        </div>
+    </div>
+
+    <div class="user-data">
+        <div class="card">
+            <div class="card-body">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" *ngFor="let info1 of userData |keyvalue">
+                        {{ info1.key }} - {{info1.value}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+

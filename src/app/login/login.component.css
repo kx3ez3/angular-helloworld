@@ -1,0 +1,16 @@
+.row{
+    /* background-image: url('https://i.pinimg.com/originals/19/9a/d3/199ad34ca5ef50e41e515180a1c151e9.png'); */
+    background-image: url('/assets/images/nexon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mycol{
+    color: rgb(255, 255, 255) !important;
+}
+.col{
+    height: 100vh;
+    width: 100%;
+}
+body{
+    overflow: hidden;
+}

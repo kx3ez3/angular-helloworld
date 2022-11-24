@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+        <div id="mycol" style="border: #eee solid 2px; padding:40px;border-radius: 10px;background-color: #fff;">
+        <h1 class="text-dark">Login Page</h1><br>
+
+        <form [formGroup]="myForm" (ngSubmit)="submitForm()">
+            <input type="email" class='form-control' placeholder="Enter your Email" formControlName="emailField">
+            <br>
+            <p class="text-danger" *ngIf="myForm.controls['emailField'].invalid && (myForm.controls['emailField'].dirty || myForm.controls['emailField'].touched)">Email is invalid!</p>
+            <br>
+            <input type="password" class='form-control' placeholder="Enter your Password" formControlName="passwordField">
+            <br>
+            <p class="text-danger" *ngIf="myForm.controls['passwordField'].invalid && (myForm.controls['passwordField'].dirty || myForm.controls['passwordField'].touched)">Password is invalid!</p>
+            <br>
+            <input class="btn btn-outline-primary" type="reset" value="Reset">
+            <input class='btn btn-success' type="submit" style='margin-left: 57%;' value="submit">
+        </form>
+        </div>
+    </div>
+    <div class="col"></div>
+    </div>
+</body>
+</html>
